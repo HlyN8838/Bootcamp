@@ -1,0 +1,116 @@
+[
+    {
+        "title": "presumed innocent",
+        "year": 2024,
+        "genre": "Drama",
+        "rating": 7.7
+    },
+    {
+        "title": "My Name",
+        "year": 2021,
+        "genre": "Drama, crime, action",
+        "rating": 7.8
+    },
+    {
+        "title": "The Witcher",
+        "year": 2019,
+        "genre": "Drama, fantasy",
+        "rating": 8
+    },
+    {
+        "title": "Lost",
+        "year": 2004,
+        "genre": "Science fiction, drama",
+        "rating": 8.3
+    },
+    {
+        "title": "How I Met Your Mother",
+        "year": 2005,
+        "genre": "comedy",
+        "rating": 8.3
+    },
+    {
+        "title": "Billions",
+        "year": 2016,
+        "genre": "Drama",
+        "rating": 8.3
+    },
+    {
+        "title": "The Handmaid's Tale",
+        "year": 2017,
+        "genre": "dystopian, Tera",
+        "rating": 8.4
+    },
+    {
+        "title": "Suits",
+        "year": 2011,
+        "genre": "Drama",
+        "rating": 8.4
+    },
+    {
+        "title": "Big Little Lies",
+        "year": 2017,
+        "genre": "Black comedy, drama",
+        "rating": 8.4
+    },
+    {
+        "title": "The Crown",
+        "year": 2016,
+        "genre": "Drama, historical",
+        "rating": 8.6
+    },
+    {
+        "title": "One Ordinary Day",
+        "year": 2021,
+        "genre": "Drama, crime, mystery",
+        "rating": 8.6
+    },
+    {
+        "title": "The Queen's Gambit",
+        "year": 2020,
+        "genre": "drama",
+        "rating": 8.5
+    },
+    {
+        "title": "Westworld",
+        "year": 2016,
+        "genre": "Science fiction, Western",
+        "rating": 8.5
+    },
+    {
+        "title": "Dark",
+        "year": 2016,
+        "genre": "Science fiction, exciting",
+        "rating": 8.7
+    },
+    {
+        "title": "Narcos",
+        "year": 2015,
+        "genre": "Drama, Crime",
+        "rating": 8.8
+    },
+    {
+        "title": "Sherlock",
+        "year": 2010,
+        "genre": "Crime, mystery, drama",
+        "rating": 9.1
+    },
+    {
+        "title": "Game of Thrones",
+        "year": 2011,
+        "genre": "Drama, fantasy",
+        "rating": 9.2
+    },
+    {
+        "title": "Breaking Bad",
+        "year": 2008,
+        "genre": "Drama, Crime",
+        "rating": 9.5
+    }
+
+]
+
+
+
+
+
