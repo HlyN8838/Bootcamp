@@ -1,16 +1,32 @@
-const Usersettings = require("./Usersettings");
 
-class recommendationEngine {
-  static recommendMovies(movies, Usersettings) {
-    return movies.filter(movie => {
+
+import FileHandler from './fileHandler';
+
+class RecommendationEngine {
+  constructor(movieData) {
+    this.movieData = movieData;
+    this.movies = [];
+  }
+
+  async loadMovies() {
+    try {
+      this.movies = await FileHandler.readJSONFile(this.movieData);
+      console.log('Loading...');
+    } catch (error) {
+      console.log('No items found:', error.message);
+    }
+  }
+
+  filterMovies(settings) {
+    return this.movies.filter(movie => {
       return (
-        (!Usersettings.genres || movie.genre.split(',').some(g => Usersettings.genres.includes(g))) &&
-        (movie.year >= Usersettings.minYear || Usersettings.minYear === 0) &&
-        (movie.year <= Usersettings.maxYear || Usersettings.maxYear === 0) &&
-        movie.rating >= Usersettings.minRating
+        (!settings.genre || movie.genre.toLowerCase().includes(settings.genre.toLowerCase())) &&
+        (!settings.minRating || movie.rating >= settings.minRating) &&
+        (!settings.minYear || movie.year >= settings.minYear) &&
+        (!settings.maxYear || movie.year <= settings.maxYear)
       );
     });
   }
 }
-    
-      module.exports = recommendationEngine;
+
+export default RecommendationEngine;
