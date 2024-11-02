@@ -2,7 +2,7 @@
 
 import readline from 'readline';
 
-class UserSettings {
+export default class UserSettings {
   constructor(settingsMovieData) {
     this.settingFilePath = settingsMovieData;
     this.settings = {}; // Initialize empty settings object
@@ -34,7 +34,7 @@ class UserSettings {
          }
        }
 
-export default UserSettings;
+       export{UserSettings};
 
 
 

@@ -3,7 +3,7 @@
 import fs from 'fs/promises';
 import readline from 'readline';
 
-class FileHandler {
+export default class FileHandler {
   static async readJSONFile(movieData) {
     try {
       const data = await fs.readFile(movieData, 'utf8');
@@ -28,5 +28,5 @@ class FileHandler {
   }
 }
 
-module.exports = FileHandler;
+export { FileHandler };
 

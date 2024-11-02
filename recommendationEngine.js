@@ -1,8 +1,8 @@
 
 
-import FileHandler from './fileHandler';
+import FileHandler from './FileHandlers.js';
 
-class RecommendationEngine {
+export default class RecommendationEngine {
   constructor(movieData) {
     this.movieData = movieData;
     this.movies = [];
@@ -29,4 +29,4 @@ class RecommendationEngine {
   }
 }
 
-export default RecommendationEngine;
+export{RecommendationEngine};
