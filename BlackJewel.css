@@ -1,0 +1,235 @@
+body{
+    background-color: black;
+}
+*{
+    font-family: "Candara";
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: logo; }
+.item3 { grid-area: table; }
+.item4 { grid-area: chart; }
+.item5 { grid-area: text; }
+.item6 { grid-area: video; }
+.item7 { grid-area: img;}
+.item8 { grid-area: news;}
+.item9 { grid-area: application;}
+.item10 { grid-area: footer;}
+
+.grid-container {
+    /* background-image: url("./12.jpg");
+    background-repeat: no-repeat; */
+    background-position: right center;   
+    position: relative;
+    display: grid;
+    grid-template-areas:
+      'header header header header logo logo'
+      'chart chart chart table table table'
+      'text video video video video img'
+      'news news news application application application'
+      'footer footer footer footer footer footer';
+;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color:none;
+    /* border-color: rgba(0, 254, 255, 0.3);
+    border-style: double; */
+    border-width: 5px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+    /* //////item2////////// */
+
+  div.item2{
+    display: block;
+    float: right;
+    width: 100%;
+    height: auto;
+  }
+
+  .item2 img{
+    width: 75px;
+    opacity: 0.2;
+    height: auto;
+    position: relative;
+    animation: logo 7s;
+    animation-fill-mode: forwards;
+}
+  @keyframes logo {
+    from {top: 0px;}
+    to {top: 7px; opacity: 1.5;} 
+  }
+  
+  /* //////item1////////// */
+
+  .item1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    margin-left: 10PX;
+    overflow: hidden;
+    background-color: rgba(0, 34, 250, 0.1);
+    position: relative;
+    animation-name: menue;
+    animation-duration: 7s;  
+    animation-fill-mode: forwards;
+  }
+  @keyframes menue {
+    from {top: 10px;}
+    to {top: 10px; background-color: rgba(0, 34, 250, 0.4);}
+  }
+  .item1 li {
+    float: left;
+  }
+  
+  .item1 li a {
+    display: block;
+    font-family: "Candara";
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 10px 10px;
+    text-decoration: none;
+    position: relative;
+    animation-name: menuetext;
+    animation-duration: 7s;  
+    animation-fill-mode: forwards;
+  }
+  @keyframes menuetext {
+    from {top: 10px;}
+    to {top: 10px; color: rgb(255, 255, 255);}
+  }
+  .item1 li a:hover {
+    background-color: rgba(0, 34, 250, 0.7);;
+  }
+
+  /* ///////////item3//////// */
+
+table {
+    background-image: url("./12.jpg");
+    background-repeat: no-repeat;
+    background-position: center;   
+    padding: 15px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+th, td {
+    padding: 2px;
+    padding: 10px 10px 10px;
+    text-align: center;
+    color: white;
+    font-family: "Candara";
+    font-size: 15px;
+    border-bottom: 1px solid #0023ff;
+  } 
+tr:hover {background-color: rgba(0, 34, 250, 0.2);}
+
+  /* ///////////item4//////// */
+
+.item4 img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* ///////////item5//////// */
+div.item5 {
+    font-family: "Candara" ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 300px;
+    width: 400px;
+}
+.item5 h1{
+    color: #0023ff;
+    font-weight: bold;
+    font-size: 24px;
+}
+.item5 p{
+    color: #004eff;
+    font-size: 20px;
+}
+  /* ///////////item6//////// */
+  video {
+    width: 450px;
+    height: auto;
+  }
+  /* ///////////item7//////// */
+.item7 img{
+        max-width: 100%;
+        height: auto;
+        margin-top: 100px;
+  }
+  /* ///////////item8//////// */
+  div .item8 {
+    margin-top: 10px;
+    font-family: "Candara";
+    font-size: 18px;
+    font-style: italic;
+  }
+  .item8 ul{
+    list-style-type: circle;
+    padding-top: 10px;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .item8 h1{
+    color: #ffffff;
+    font-family: "Candara";
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  .item8 a{
+    color: #00caff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  .item8 a:visited {
+    color: #00caff;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .item8 a:hover {
+    color: #ffb700;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .item8 a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+    /* ///////////item9//////// */
+    
+    button.application{
+        background-color: #0097ff;
+        border: none;
+        border-radius: 4.5px;
+        color: #ffffff;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.4;
+        transition: 0.5s;
+        text-decoration: none;
+        margin-top: 80px;
+      }
+      
+      button.application:hover {opacity: 1}
+  
+          /* ///////////item10//////// */
+          .item10 p{
+            font-family: "Candara";
+            font-size: 13px;
+            color: rgba(0, 151, 255, 0.6);
+          }
